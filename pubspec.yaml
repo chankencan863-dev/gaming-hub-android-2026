@@ -6,3 +6,7 @@ dependencies:
   battery_plus: ^6.0.0        # Info baterai real-time
   system_info_plus: ^5.0.0    # Info RAM/CPU
   http: ^1.2.0                # Mengambil data game terbaru (API)
+  sqflite: ^2.3.0        # Database lokal
+  path: ^1.9.0           # Manajemen path file
+  http: ^1.2.0           # Mengambil data dari internet
+  url_launcher: ^6.3.0   # Membuka link berita
