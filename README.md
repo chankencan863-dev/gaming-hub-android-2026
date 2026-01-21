@@ -20,3 +20,25 @@ Gaming Hub adalah aplikasi pusat kontrol game modern untuk Android yang dibangun
 1. **Clone repositori:**
    ```bash
    git clone https://github.com
+
+## Setup Firebase:
+Tambahkan google-services.json milik Anda ke android/app/.
+### Instal dependencies:
+flutter pub get
+
+### Jalankan aplikasi:
+flutter run
+
+## 📝 Catatan Keamanan
+API Key dan konfigurasi Firebase tidak disertakan dalam repositori ini. Silakan gunakan kunci API Anda sendiri dari RAWG.io.
+
+### Langkah Push ke GitHub (Terminal)
+Gunakan perintah ini untuk mengunggah proyek pertama kali:
+
+```bash
+git init
+git add .
+git commit -m "Initial commit: Gaming Hub 2026 with Firebase & SQLite"
+git branch -M main
+git remote add origin https://github.com
+git push -u origin main
