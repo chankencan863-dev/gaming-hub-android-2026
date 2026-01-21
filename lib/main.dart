@@ -2,6 +2,29 @@ import 'package:flutter/material.dart';
 import 'package:installed_apps/installed_apps.dart';
 import 'package:battery_plus/battery_plus.dart';
 import 'dart:async';
+import 'package:firebase_messaging/firebase_messaging.dart';
+
+class NotificationService {
+  static final FirebaseMessaging _fcm = FirebaseMessaging.instance;
+
+  static Future<void> init() async {
+    // Meminta izin notifikasi (Penting untuk Android 13+)
+    NotificationSettings settings = await _fcm.requestPermission();
+    
+    if (settings.authorizationStatus == AuthorizationStatus.authorized) {
+      // Mendapatkan token unik perangkat untuk pengiriman target
+      String? token = await _fcm.getToken();
+      print("Device Token: $token"); // Simpan ini di server Anda untuk kirim info diskon
+    }
+
+    // Menangani pesan saat aplikasi berjalan di foreground
+    FirebaseMessaging.onMessage.listen((RemoteMessage message) {
+      print("Notifikasi Diskon: ${message.notification?.title}");
+      // Tampilkan sebagai dialog atau snackbar di dalam Hub
+    });
+  }
+}
+
 
 void main() => runApp(GamingHubPro());
 
