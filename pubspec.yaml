@@ -10,3 +10,6 @@ dependencies:
   path: ^1.9.0           # Manajemen path file
   http: ^1.2.0           # Mengambil data dari internet
   url_launcher: ^6.3.0   # Membuka link berita
+  firebase_core: ^3.0.0
+  firebase_messaging: ^15.0.0
+  flutter_local_notifications: ^17.0.0 # Untuk menampilkan popup saat app terbuka
