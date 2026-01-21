@@ -1,5 +1,8 @@
 dependencies:
   flutter:
     sdk: flutter
-  installed_apps: ^1.0.2  # Library untuk list & buka aplikasi
-  device_apps: ^2.2.0     # Alternatif untuk kontrol lebih detail
+  installed_apps: ^1.0.2
+  percent_indicator: ^4.2.3   # Untuk bar baterai/performa
+  battery_plus: ^6.0.0        # Info baterai real-time
+  system_info_plus: ^5.0.0    # Info RAM/CPU
+  http: ^1.2.0                # Mengambil data game terbaru (API)
