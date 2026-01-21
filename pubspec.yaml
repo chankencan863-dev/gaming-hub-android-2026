@@ -1,0 +1,5 @@
+dependencies:
+  flutter:
+    sdk: flutter
+  installed_apps: ^1.0.2  # Library untuk list & buka aplikasi
+  device_apps: ^2.2.0     # Alternatif untuk kontrol lebih detail
