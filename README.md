@@ -8,10 +8,10 @@ Gaming Hub adalah aplikasi pusat kontrol game modern untuk Android yang dibangun
 - **Playtime Tracker:** Mencatat durasi sesi bermain menggunakan database lokal SQLite.
 - **Smart Notifications:** Integrasi Firebase Cloud Messaging (FCM) untuk info diskon game (Steam/PlayStore).
 - **Game Discovery:** Menampilkan tren game terbaru menggunakan [RAWG API](https://rawg.io).
-- **Cloud Messaging (FCM) dan Thermal Monitoring (Suhu HP)
-- **Database (SQLite) untuk mencatat statistik waktu bermain
-- **API (RAWG) untuk menampilkan berita/rekomendasi game terbaru.
-- **Game Playtime Tracking, Sistem Overlay (FPS Counter), Manajemen Suhu/Baterai, dan Game Discovery via API.
+- **Cloud Messaging (FCM)** dan Thermal Monitoring (Suhu HP)
+- **Database (SQLite)** untuk mencatat statistik waktu bermain
+- **API (RAWG)** untuk menampilkan berita/rekomendasi game terbaru.
+- **Game Playtime Tracking**, Sistem Overlay (FPS Counter), Manajemen Suhu/Baterai, dan Game Discovery via API.
 
 ## 🛠️ Teknologi yang Digunakan
 - **Framework:** Flutter (2026 Version)
